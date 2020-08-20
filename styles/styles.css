@@ -230,6 +230,10 @@ header .header-header {
   font-weight: 600;
 }
 
+.works-section .sections img {
+  max-width: 100%;
+}
+
 @media (max-width: 767px) {
   .works-section .sections {
     grid-template-columns: 1fr;
