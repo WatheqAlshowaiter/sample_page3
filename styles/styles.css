@@ -243,10 +243,9 @@ header .header-header {
 /* start items-section  */
 .items-section {
   margin: 4em 0;
-  display: flex;
-}
-.items-section .item {
-  margin: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
 }
 
 .items-section .item i {
@@ -285,7 +284,7 @@ header .header-header {
 
 @media (max-width: 767px) {
   .items-section {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .items-section .item {
     margin-bottom: 1em;
